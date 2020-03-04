@@ -16,36 +16,36 @@ const NavBar = ({ isLoggedIn, currentUser, doSetCurrentUser }) => {
         <>
             <Wrapper>
                 <ul>
-                    <li>
-                        <Link exact to="/">
+                    <li key={0}>
+                        <Link to="/">
                             Home
                         </Link>
                     </li>
-                    <li>
-                        <Link exact to="/countrylist">
+                    <li key={1}>
+                        <Link to="/countrylist">
                             Countries
                         </Link>
                     </li>
-                    <li>
-                        <Link exact to="/map">
+                    <li key={2}>
+                        <Link to="/map">
                             View Map
                         </Link>
                     </li>
-                    <li>
-                        <Link exact to="/communication">
+                    <li key={3}>
+                        <Link to="/communication">
                         communication
                         </Link>
                     </li>
-                    <li>
-                        <Link exact to="/selfcheck">
+                    <li key={4}>
+                        <Link to="/selfcheck">
                         Self Check
                         </Link>
                     </li>
 
                     {isLoggedIn ?
                         <>
-                            <li>
-                                <Link exact to="/"
+                            <li key={5}>
+                                <Link to="/"
                                     style={{ cursor: 'pointer' }} onClick={logoutUser} >LOGOUT
                                     </Link>
                             </li>
@@ -53,13 +53,13 @@ const NavBar = ({ isLoggedIn, currentUser, doSetCurrentUser }) => {
                         </>
                         :
                         <>
-                            <li>
-                                <Link exact to="/login">
+                            <li key={6}>
+                                <Link to="/login">
                                     Login
                         </Link>
                             </li>
-                            <li>
-                                <Link exact to="/signup">
+                            <li key={7}>
+                                <Link to="/signup">
                                     SignUp
                         </Link>
                             </li>

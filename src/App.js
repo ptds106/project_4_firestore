@@ -10,7 +10,6 @@ import PasswordForgetForm from './components/PasswordForget';
 import Country from './components/Countries'
 import CountryList from './components/CountryList'
 import Map from './components/Map'
-// import MovieSearch from './components/MovieSearch'
 
 import './App.css';
 
@@ -53,7 +52,7 @@ class App extends Component {
           <Route exact path='/signup' render={() => (<SignUp doSetCurrentUser={this.doSetCurrentUser} />)} />
           <Route exact path='/password-forget' component={PasswordForgetForm}/>
           <Route exact path='/countrylist' component={CountryList} />
-          <Route exact path='/:communication' component={Communications} />
+          <Route exact path='/communication' component={Communications} />
           <Route exact path='/selfcheck' component={SelfCheck} />
           <Route exact path='/:id' component={Country} />
 

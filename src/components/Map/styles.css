@@ -1,13 +1,8 @@
-
-svg {
-    display: inline-block;
-    vertical-align: middle;
-    height: 47vw;
-  }
-  
-  .Map {
-    font-family: sans-serif;
-    text-align: center;
-
-  }
-  
+#chartdiv{
+  text-align: center;
+  border:1px solid black;
+  height: 30vw;
+  width: 70vw;
+  margin: auto;
+  border-radius: 80px;
+}

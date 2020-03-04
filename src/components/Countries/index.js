@@ -24,9 +24,9 @@ const Country = (props) => {
   
     Data.map(d => {
         if (d["countryEnglishName"] === props.match.params.id) {
-            
-            return data.push(d)
+            data.push(d)
         }
+        return data;
     })
 
     data.map(d => {
@@ -50,6 +50,7 @@ const Country = (props) => {
                 }
             }
         }
+        return cities
     })
 
     if(cities.length === 1) {
