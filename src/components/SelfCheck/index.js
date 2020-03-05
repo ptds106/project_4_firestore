@@ -16,6 +16,7 @@ const SelfCheck = () => {
         diarrhea: false
     })
     const[render, setRender] = useState([])
+    const[isSubmitted, setisSubmitted] = useState(false)
     const handleChange = evt => {
         const value =
             evt.target.type === "checkbox" ? evt.target.checked : evt.target.value;
@@ -39,6 +40,7 @@ const SelfCheck = () => {
             <div>Symptoms may appear 2-14 days after exposure. </div>
             <br/>
             <br/>
+            {!isSubmitted && 
             <form className="selfCheckButton" onSubmit={handleSubmit}>
                 <br />
                 <label className="container">Do you have dry cough? 
@@ -133,6 +135,10 @@ const SelfCheck = () => {
                 <br />
                 <button className="checkButton" type='submit'>submit</button>
             </form>
+}
+{/* {isSubmitted &&
+
+} */}
         </>
     )
 }

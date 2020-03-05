@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import {Link} from 'react-router-dom'
 import Firebase from '../Firebase/firebase'
-
-const Communications = () => {
+import {Redirect} from 'react-router-dom'
+const ShowArticle = () => {
     const [article, setArticle] = useState([]);
     const [input, setInput] = useState({})
     useEffect(() => {
@@ -30,21 +29,36 @@ const Communications = () => {
         e.preventDefault();
         Firebase.database.collection('communications')
             .add({
-                timestamp: Firebase.app.firestore.FieldValue.serverTimestamp(),
+                timestamp: Firebase.time,
                 articles: content,
                 title,
-
             })
+            .catch((error) =>{
+                console.log("Tanner~")
+            })
+            return <Redirect to='/communication'/>
     };
 
     return (
         <>
             <h1>hello</h1>
-            {article.map((ele) => (
-                <h1 key={ele.id}> {ele.articles}</h1>
-            ))}
-            <Link exact to='/showarticle'>addd</Link>
+
+            <form onSubmit={handleSubmit}>
+                <label>
+                    Add title:
+             <input name="title" onChange={handleChange} type='text' />
+                </label>
+                <br />
+                <br />
+                <br />
+                <label>
+                    Add article:
+                <br />
+                    <textarea name="content" onChange={handleChange} rows="20" cols="150" />
+                </label><br />
+                <button type="'submit">Submit</button>
+            </form>
         </>
     );
 };
-export default Communications
+export default ShowArticle

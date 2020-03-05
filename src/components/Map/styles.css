@@ -1,17 +1,19 @@
 #chartdiv{
   text-align: center;
   border:1px solid black;
-  height: 30vw;
-  width: 70vw;
+  height: 32vw;
+  width: 100%;
   margin: auto;
   border-radius: 80px;
+  background-color: black;
 }
 .ampopup {
   overflow: visible;
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2000
+  top: 0vw;
+  left: 0vw;
+  z-index: 2000;
+
 }
 
 .ampopup-curtain {
@@ -35,7 +37,7 @@
   padding: 1em 2em;
   background: grey;
   background-color: grey;
-  display: inline-block;
+
   position: absolute;
   max-width: 90%;
   max-height: 90%;

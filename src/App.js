@@ -5,6 +5,7 @@ import Home from './components/Home';
 import NavBar from './components/NavBar';
 import SignUp from './components/SignUp';
 import Communications from './components/Communications';
+import ShowArticle from './components/ShowArticle';
 import SelfCheck from './components/SelfCheck';
 import PasswordForgetForm from './components/PasswordForget';
 import Country from './components/Countries'
@@ -53,6 +54,7 @@ class App extends Component {
           <Route exact path='/password-forget' component={PasswordForgetForm}/>
           <Route exact path='/countrylist' component={CountryList} />
           <Route exact path='/communication' component={Communications} />
+          <Route exact path='/showarticle' component={ShowArticle} />
           <Route exact path='/selfcheck' component={SelfCheck} />
           <Route exact path='/:id' component={Country} />
 

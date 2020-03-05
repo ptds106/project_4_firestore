@@ -6,7 +6,7 @@ import overall from '../../Data/overall'
 const Home = () => {
     const [confirmedCount, setConfirmed] = useState(0);
 useEffect(() => {
-    setConfirmed(overall[0][" confirmedCount "])
+    setConfirmed(overall[0]["confirmedCount"])
 },[])
   
     return(
