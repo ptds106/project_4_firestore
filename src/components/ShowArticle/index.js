@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Firebase from '../Firebase/firebase'
-import {Redirect} from 'react-router-dom'
-const ShowArticle = () => {
+// import { Redirect } from 'react-router-dom'
+const ShowArticle = (props) => {
     const [article, setArticle] = useState([]);
     const [input, setInput] = useState({})
     useEffect(() => {
@@ -18,6 +18,7 @@ const ShowArticle = () => {
             })
     }, [])
 
+
     const handleChange = e => {
         setInput({
             ...input, [e.target.name]: e.target.value
@@ -33,10 +34,12 @@ const ShowArticle = () => {
                 articles: content,
                 title,
             })
+            .then(() => {
+                props.history.push("/communication")
+            })
             .catch((error) =>{
                 console.log("Tanner~")
             })
-            return <Redirect to='/communication'/>
     };
 
     return (

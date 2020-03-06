@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import {Link} from 'react-router-dom'
+import "./styles.css";
 import Firebase from '../Firebase/firebase'
 
 const Communications = () => {
@@ -36,14 +37,24 @@ const Communications = () => {
 
             })
     };
+    // const doDeletePost = async post => {
+    //     e.preventDefault()
+    //     try{
+    //         Firebase.database.collection("communications").doc(post).delete()
+    //     }
+        
+
 
     return (
         <>
             <h1>hello</h1>
+            <ul>
             {article.map((ele) => (
-                <h1 key={ele.id}> {ele.articles}</h1>
+                <li className="lili" key={ele.id}> {ele.articles}</li>
             ))}
+            </ul>
             <Link exact to='/showarticle'>addd</Link>
+            {/* <Link to= `/communications/delete/${doc.id}`> Delete Post</Link> */}
         </>
     );
 };

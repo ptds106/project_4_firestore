@@ -10,7 +10,7 @@ ul {
   li {
     float: left;
     margin: 12px 0px 12px 0px; 
-  }
+    }
   
   li a {
   background-color: #f6f6f6;
@@ -19,5 +19,6 @@ ul {
     text-decoration: none;
     padding: 12px 15px;
     color: black;
+    
 `;
 
