@@ -9,10 +9,15 @@ info: Coronavirus disease 2019 (COVID-19) is an infectious disease caused by sev
 - User can self check the symptom for COVID-19
 
 ☐ Screenshot(s): Image of actual SITE.
-![alt text](https://github.com/ptds106/project_4_firestore/blob/master/Screenshot%20from%202020-03-06%2000-16-55.png)<br/>
-![alt text](https://github.com/ptds106/project_4_firestore/blob/master/Screenshot%20from%202020-03-06%2000-17-09.png)<br/>
+
 ![alt text](https://github.com/ptds106/project_4_firestore/blob/master/Screenshot%20from%202020-03-06%2000-17-12.png)<br/>
+
+![alt text](https://github.com/ptds106/project_4_firestore/blob/master/Screenshot%20from%202020-03-06%2000-16-55.png)<br/>
+
+![alt text](https://github.com/ptds106/project_4_firestore/blob/master/Screenshot%20from%202020-03-06%2000-17-09.png)<br/>
+
 ![alt text](https://github.com/ptds106/project_4_firestore/blob/master/Screenshot%20from%202020-03-06%2000-17-17.png)<br/>
+
 ![alt text](https://github.com/ptds106/project_4_firestore/blob/master/Screenshot%20from%202020-03-06%2000-17-24.png)<br/>
 
 
