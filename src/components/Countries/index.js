@@ -106,12 +106,13 @@ const handleCitySelect = (city) => {
                 Dead Count: {deadCount}<br />
                 <Link to="/countrylist">
                     Go back
-                </Link><br />
+                </Link><br /><br />
+                <div><strong>Click the region to view detailed data</strong></div>
                 <div
                     className="column"
 
                 >
-                    <h2>Region</h2>
+                    <h2 class='underlined'>Region</h2>
                     <ul className="cityUl">
                         {cityName.map((cn, idx) => (
                             <li
@@ -125,7 +126,7 @@ const handleCitySelect = (city) => {
                     </ul>
                 </div>
                 <div className="column">
-                    <h2>Statistics</h2>
+                    <h2 class='underlined'>Statistics</h2>
                     <p>Cured Count: {selectedCity['curedCount']}</p>
                     <p>Current Confirmed Count: {selectedCity[ 'currentConfirmedCount' ]}</p>
                     <p>Possible Confirmed Count: {selectedCity['confirmedCount']}</p>

@@ -91,8 +91,8 @@ class Map extends Component {
       let popup = map.openPopup(' <div id="chartdivs"></div> <strong><bold>' + ev.target.dataItem.dataContext.name +
         "</bold></strong> <br/> Confirmed Count <strong>" + confirmedCount + "</strong> <br/> Dead Count <strong>" + deadCount +
         "</strong> <br/> Cured Count <strong>" + curedCount + "</strong> <br/>");
-        popup.left = ev.svgPoint.x + 300;
-        popup.top = ev.svgPoint.y + 15;
+        popup.right = 200;
+        popup.top =  120;
         chart.data = [{
           "status": "Cured Count",
           "Number of People": curedCount,

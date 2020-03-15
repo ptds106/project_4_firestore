@@ -1,19 +1,13 @@
 
     const results = [
         {
-            "currentConfirmedCount": 25430,
-            "confirmedCount": 80566,
-            "suspectedCount": 522,
-            "curedCount": 52121,
-            "deadCount": 3015,
-            "seriousCount": 5952,
-            "currentConfirmedIncr": -2094,
-            "confirmedIncr": 144,
-            "suspectedIncr": 143,
-            "curedIncr": 2207,
-            "deadIncr": 31,
-            "seriousIncr": -464,
-            "generalRemark": "疑似病例数来自国家卫健委数据，目前为全国数据，未分省市自治区等。浙江省 12 例外省治愈暂无具体省份信息。",
+            "currentConfirmedCount": 13574,
+            "confirmedCount": 81024,
+            "suspectedCount": 88,
+            "curedCount": 64269,
+            "deadCount": 3181,
+            "seriousCount": 4020,
+            "generalRemark": "1. 3 月 12 日国家卫健委确诊补订遗漏 12 例确诊病例（非 12 日新增），暂无具体省份信息。 2. 浙江省 12 例外省治愈暂无具体省份信息。",
             "abroadRemark": "",
             "remark1": "易感人群：人群普遍易感。老年人及有基础疾病者感染后病情较重，儿童及婴幼儿也有发病",
             "remark2": "潜伏期：一般为 3～7 天，最长不超过 14 天，潜伏期内可能存在传染性，其中无症状病例传染性非常罕见",
@@ -23,7 +17,7 @@
             "note1": "病毒：SARS-CoV-2，其导致疾病命名 COVID-19",
             "note2": "传染源：新冠肺炎的患者。无症状感染者也可能成为传染源。",
             "note3": "传播途径：经呼吸道飞沫、接触传播是主要的传播途径。气溶胶传播和消化道等传播途径尚待明确。",
-            "updateTime": 1583385305773
+            "updateTime": 1584151798182
         }
     ]
 
