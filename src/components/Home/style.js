@@ -13,7 +13,7 @@ ul {
     width:10%
   }
   .homeImg{
-  width: 50vw;
+  width: 60vw;
   height: 30vw;
 }
 `;

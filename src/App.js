@@ -43,22 +43,22 @@ class App extends Component {
 
     return (
       <div className="App">
-               <BrowserRouter>
-        <NavBar isLoggedIn={isLoggedIn} currentUser={currentUser} doSetCurrentUser={this.doSetCurrentUser} />
- 
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/map' component={Map} />
-          <Route exact path='/login' render={() => (<Login loginUser={this.loginUser} />)} />
-          <Route exact path='/signup' render={() => (<SignUp doSetCurrentUser={this.doSetCurrentUser} />)} />
-          <Route exact path='/password-forget' component={PasswordForgetForm}/>
-          <Route exact path='/countrylist' component={CountryList} />
-          <Route exact path='/communication' component={Communications} />
-          <Route exact path='/showarticle' component={ShowArticle} />
-          <Route exact path='/selfcheck' component={SelfCheck} />
-          <Route exact path='/:id' component={Country} />
+        <BrowserRouter>
+          <NavBar isLoggedIn={isLoggedIn} currentUser={currentUser} doSetCurrentUser={this.doSetCurrentUser} />
 
-        </Switch>
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route exact path='/map' component={Map} />
+            <Route exact path='/login' render={() => (<Login loginUser={this.loginUser} />)} />
+            <Route exact path='/signup' render={() => (<SignUp doSetCurrentUser={this.doSetCurrentUser} />)} />
+            <Route exact path='/password-forget' component={PasswordForgetForm} />
+            <Route exact path='/countrylist' component={CountryList} />
+            <Route exact path='/communication' component={Communications} />
+            <Route exact path='/showarticle' component={ShowArticle} />
+            <Route exact path='/selfcheck' component={SelfCheck} />
+            <Route exact path='/:id' component={Country} />
+
+          </Switch>
         </BrowserRouter>
       </div>
     );
